@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Bookshelf Apps</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="assets/style/style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </head>
+    <body>
+        <header>
+            <div class="top text-center">
+                <h1>Selamat Datang di Bookshelf App!</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#add-book">Penambahan Buku</a></li>
+                    <li><a href="#search">Pencarian</a></li>
+                    <li><a href="#unreads">Belum Dibaca</a></li>
+                    <li><a href="#reads">Sudah Dibaca</a></li>
+                    <li><a href="#others">Lainnya</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="wrapper">
+                <div class="container card" id="add-book">
+                    <h2 class="container-header text-center">Masukkan Sebuah Buku</h2>
+                    <form class="form" action="#" id="form-submit">
+                        <div class="form-group form-title">
+                            <label for="title">Judul</label><br>
+                            <input type="text" id="title" name="title" required><br>
+                        </div>
+                        <div class="form-group form-title">
+                            <label for="author">Penulis</label><br>
+                            <input type="text" id="author" name="author" required><br>
+                        </div>
+                        <div class="form-group form-title">
+                            <label for="year">Tahun</label><br>
+                            <input type="text" id="year" maxlength="4" name="year" required><br>
+                        </div>
+                        <div class="form-group form-title">
+                            <label for="read">Selesai Dibaca</label>
+                            <input type="checkbox" id="read" name="read">
+                        </div>
+                        <input type="submit" value="Masukkan ke dalam Rak" name="Submit" class="btn-submit">
+                    </form>
+                </div>
+                <div class="container card" id="search">
+                    <h2 class="container-header text-center">Cari Buku</h2>
+                    <form class="form" action="#" id="form-search">
+                        <div class="form-group form-title">
+                            <label for="title-search">Judul</label>
+                            <input type="text" id="title-search" name="title-search">
+                        </div>
+                        <div class="form-group form-title">
+                            <label for="author-search">Penulis</label>
+                            <input type="text" id="author-search" name="author-search">
+                        </div>
+                        <div class="form-group form-title">
+                            <label for="year-search">Tahun</label>
+                            <input type="text" id="year-search" name="year-search">
+                        </div>
+                        <input type="submit" value="Cari" name="Cari" class="btn-submit">
+                    </form>
+                </div>
+                <div class="container card" id="unreads">
+                    <h2 class="container-header">Belum Selesai Dibaca</h2>
+                    <div class="list-item" id="books">
+                    </div>
+                </div>
+                <div class="container card" id="reads">
+                    <h2 class="container-header">Sudah Selesai Dibaca</h2>
+                    <div class="list-item" id="completed-books">
+                    </div>
+                </div>
+            </div>
+            <aside>
+                <article class="profile card" id="others">
+                    <header class="text-center">
+                        <h2>Jonathan Immanuel</h2>
+                        <p>Mahasiswa UNSRI</p>
+                        <figure>
+                            <img src="assets/img/profile.jpg" alt="Foto Profil">
+                            <figcaption>Foto Profil</figcaption>
+                        </figure>
+                    </header>
+                    <section>
+                        <h3>Lainnya</h3>
+                        <table>
+                            <tr>
+                                <th>Alamat:</th>
+                                <td>Kota Palembang</td>
+                            </tr>
+                            <tr>
+                                <th>Kontak:</th>
+                                <td>0821-7548-****</td>
+                            </tr>
+                            <tr>
+                                <th>Email:</th>
+                                <td>jojo***@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <th>LinkedIn:</th>
+                                <td><a href="https://www.linkedin.com/in/jonathan-i-33bab4230/">Link</td>
+                            </tr>
+                        </table>
+                    </section>
+                </article>
+            </aside>
+        </main>
+        <footer class="text-center">
+            <p>Web Designed by Jonathan Immanuel, 2022</p>
+        </footer>
+        <div id="toast">Data Anda telah disimpan!</div>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
